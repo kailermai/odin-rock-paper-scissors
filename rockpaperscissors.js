@@ -3,9 +3,6 @@ let choice;
 let randint;
 let lowerAnswer;
 
-// Prompts for the initial player choice
-let playerAnswer = prompt("Rock, Paper or Scissors?");
-
 //Function to randomly pick the computer's choice
 function getComputerChoice() {
   randint = Math.floor(Math.random() * 3) + 1;
@@ -44,4 +41,12 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-console.log(playRound(playerAnswer, getComputerChoice()));
+function game() {
+  for (let i = 0; i < 5; i++) {
+    console.log(
+      playRound(prompt("Rock, Paper or Scissors?"), getComputerChoice())
+    );
+  }
+}
+
+game();
