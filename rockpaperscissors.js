@@ -134,7 +134,7 @@ scissors.addEventListener("click", () => {
         "Game over! You Win! Refresh the page to play again.";
     } else {
       gameover.textContent =
-        "Game over! You lose! Refrash the page to play again.";
+        "Game over! You lose! Refresh the page to play again.";
     }
     result.appendChild(gameover);
   }
